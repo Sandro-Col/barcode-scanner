@@ -43,7 +43,7 @@ function App() {
             <br />
             <Html5QrcodePlugin
                 fps={10}
-                qrbox={{width: 450, height: 100}}
+                qrbox={{width: 150, height: 150}}
                 disableFlip={false}
                 aspectRatio={1.777778}
                 qrCodeSuccessCallback={onNewScanResult}
