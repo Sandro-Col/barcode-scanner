@@ -1,4 +1,9 @@
 import React from 'react';
+import beepSound from "./assets/sounds/store-scanner-beep-90395.mp3";
+
+function playSound() {
+    new Audio(beepSound).play();
+}
 
 function filterResults (results) {
     let filteredResults = [];
@@ -12,6 +17,7 @@ function filterResults (results) {
             filteredResults.push(results[i]);
         }
     }
+    playSound();
     return filteredResults;
 }
 
