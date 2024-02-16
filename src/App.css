@@ -2,6 +2,32 @@
   text-align: center;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: #37559d;
+  }
+
+  table { 
+    border-collapse: collapse; 
+    width: 100%; 
+} 
+
+th { 
+    background-color: cornflowerblue;
+    color: white;
+} 
+  
+tr:nth-child(odd) { 
+    background-color: whitesmoke; 
+    color: cornflowerblue;
+} 
+tr:nth-child(even) { 
+    background-color: cornflowerblue;
+    color: whitesmoke;
+} 
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
