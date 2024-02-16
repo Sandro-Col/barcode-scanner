@@ -48,9 +48,7 @@ function App() {
   return (
     <div className="App">
       <section className="App-section">
-        <div className="App-section-title"> Test - Html5-qrcode React demo</div>
-        <br />
-        <br />
+        <div className="App-section-title"> Barcode Scanner</div>
         <br />
         <Html5QrcodePlugin
           fps={10}
@@ -65,6 +63,8 @@ function App() {
         <input type="number" placeholder='Shelf...' onChange={(event) => {setShelf(event.target.value);}}></input>
 
         <ResultContainerPlugin results={decodedResults}/>
+      </section>
+      <section className="App-section-footer">
       </section>
     </div>
   );
