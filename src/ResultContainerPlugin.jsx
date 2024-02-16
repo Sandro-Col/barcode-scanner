@@ -30,8 +30,8 @@ const ResultContainerTable = ({ data }) => {
                 {
                     results.map((result, i) => {
                         console.log(result);
-                        return (<tr key={i}>
-                            <td>{i}</td>
+                        return (<tr key={i+1}>
+                            <td>{i+1}</td>
                             <td>{result.decodedText}</td>
                             <td>{result.result.format.formatName}</td>
                         </tr>);
