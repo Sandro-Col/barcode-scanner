@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/barcode-scanner/static/css/main.eb8e0e51.css",
-    "main.js": "/barcode-scanner/static/js/main.030f7700.js",
+    "main.css": "/barcode-scanner/static/css/main.9d9a6f4a.css",
+    "main.js": "/barcode-scanner/static/js/main.5e885849.js",
     "static/js/592.978c4732.chunk.js": "/barcode-scanner/static/js/592.978c4732.chunk.js",
     "static/media/store-scanner-beep-90395.mp3": "/barcode-scanner/static/media/store-scanner-beep-90395.31230d8a06fefd7166d6.mp3",
     "static/media/logo.svg": "/barcode-scanner/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/barcode-scanner/index.html",
-    "main.eb8e0e51.css.map": "/barcode-scanner/static/css/main.eb8e0e51.css.map",
-    "main.030f7700.js.map": "/barcode-scanner/static/js/main.030f7700.js.map",
+    "main.9d9a6f4a.css.map": "/barcode-scanner/static/css/main.9d9a6f4a.css.map",
+    "main.5e885849.js.map": "/barcode-scanner/static/js/main.5e885849.js.map",
     "592.978c4732.chunk.js.map": "/barcode-scanner/static/js/592.978c4732.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb8e0e51.css",
-    "static/js/main.030f7700.js"
+    "static/css/main.9d9a6f4a.css",
+    "static/js/main.5e885849.js"
   ]
 }
