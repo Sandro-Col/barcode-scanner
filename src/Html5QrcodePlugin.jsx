@@ -1,5 +1,10 @@
 import { Html5QrcodeScanner } from 'html5-qrcode';
 import { useEffect } from 'react';
+// import beepSound from "./assets/sounds/store-scanner-beep-90395.mp3";
+
+// function playSound() {
+//     new Audio(beepSound).play();
+// }
 
 const qrcodeRegionId = "html5qr-code-full-region";
 
@@ -18,6 +23,18 @@ const createConfig = (props) => {
     if (props.disableFlip !== undefined) {
         config.disableFlip = props.disableFlip;
     }
+    // if (props.aisle !== undefined) {
+    //     config.aisle = props.aisle;
+    // }
+    // if (props.side !== undefined) {
+    //     config.side = props.side;
+    // }
+    // if (props.section !== undefined) {
+    //     config.section = props.section;
+    // }
+    // if (props.shelf !== undefined) {
+    //     config.shelf = props.shelf;
+    // }
     return config;
 };
 
