@@ -14,16 +14,59 @@ function playSound() {
 }
 
 function App() {
-  const [aisle, setAisle] = useState(0);
+
+    const initialState = [
+        {id: 1, name: 'Alice', salary: 100},
+        {id: 2, name: 'Bobby Hadz', salary: 200},
+      ];
+
+    //   console.log("initialState: ", initialState);
+    
+      const [employees, setEmployees] = useState(initialState);
+
+      const arr = [
+        {id: 3, name: 'Carl', salary: 300},
+        {id: 4, name: 'Demi', salary: 400},
+      ];
+
+    //   console.log("arr: ", arr);
+
+      
+  const [aisle, setAisle] = useState(88);
   const [side, setSide] = useState("");
   const [section, setSection] = useState(0);
   const [shelf, setShelf] = useState(0);
+  let item = [];
+
+//   setSide("A");
+//   setSection(1);
+//   setShelf(1);
+
+
 
   const [decodedResults, setDecodedResults] = useState([]);
+  const [listOfItems, setListOfItems] = useState([]);
+
   const onNewScanResult = (decodedText, decodedResult) => {
-    console.log("App [result]", decodedResult);
+    // console.log("App [decodedResult]", decodedResult);
+    // console.log("App [decodedResult_S]", decodedResults);
+
     setDecodedResults((prev) => [...prev, decodedResult]);
-    playSound();
+
+        console.log("App [decodedResult_S]", decodedResults);
+
+
+    // item = [{aisle:aisle, upc:decodedResult.decodedText}];
+    // setListOfItems([...listOfItems, ...item]);
+    // console.log("item: ", item);
+    // console.log("listOfItems: ", listOfItems);
+    // setlistOfItems((prev) => [...prev, item]);
+    // playSound();
+
+    setEmployees([...employees, ...arr]);
+
+      console.log("employees: ", employees);
+
   };
 
   /* return (
@@ -62,7 +105,7 @@ function App() {
         <input type="number" placeholder='Section...' onChange={(event) => {setSection(event.target.value);}}></input>
         <input type="number" placeholder='Shelf...' onChange={(event) => {setShelf(event.target.value);}}></input>
 
-        <ResultContainerPlugin results={decodedResults}/>
+        <ResultContainerPlugin results={decodedResults} aisle={aisle} side={side} section={section}/>
       </section>
       <section className="App-section-footer">
       </section>

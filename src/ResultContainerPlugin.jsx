@@ -21,22 +21,18 @@ const ResultContainerTable = ({ data }) => {
     <table className={"Qrcode-result-table"}>
       <thead>
         <tr>
-          <td>#</td>
           <td>Barcode</td>
-          <td>Format</td>
         </tr>
       </thead>
       <tbody>
         {results.map((result, i) => {
           const link = "https://go-upc.com/search?q=" + result.decodedText;
-          console.log(result);
+        //   console.log(result);
           return (
             <tr key={i + 1}>
-              <td>{i + 1}</td>
               <td>
                 <a href={link} target="_blank" rel="noreferrer" className="link"> {result.decodedText} </a>
               </td>
-              <td>{result.result.format.formatName}</td>
             </tr>
           );
         })}
@@ -51,7 +47,7 @@ const ResultContainerPlugin = (props) => {
     <div className="Result-container">
       <div className="Result-header">Scanned results ({results.length})</div>
       <div className="Result-section">
-        <ResultContainerTable data={results} />
+        <ResultContainerTable data={props} />
       </div>
     </div>
   );
